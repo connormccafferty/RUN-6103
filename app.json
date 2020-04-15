@@ -1,0 +1,56 @@
+{
+    "startup_app": {
+        "name": "run-6013-repro",
+        "uuid": "run-6013-repro",
+        "url": "http://localhost:5555/index.html",
+        "autoShow": true,
+        "defaultHeight": 600,
+        "defaultWidth": 600,
+        "permissions": {
+            "ExternalWindow": {
+                "wrap": true
+            },
+            "System": {
+                "getAllExternalWindows": true,
+                "launchExternalProcess": true,
+                "readRegistryValue": false,
+                "terminateExternalProcess": true
+            }
+        }
+    },
+    "runtime": {
+        "arguments": "--disable-web-security",
+        "version": "stable"
+    },
+    "appAssets": [
+        {
+            "src": "http://localhost:5555/example.txt.zip",
+            "alias": "example",
+            "version": "0.0.1",
+            "target": "example.txt",
+            "mandatory": true
+        },
+        {
+            "src": "http://localhost:5555/style.xslt.zip",
+            "alias": "excel-template",
+            "target": "style.xslt",
+            "version": "0.1.0",
+            "mandatory": true
+        },
+        {
+            "src": "http://localhost:5555/template-balance-sheet.xlsx.zip",
+            "alias": "balance-sheet",
+            "target": "template-balance-sheet.xlsx",
+            "version": "0.1.0",
+            "mandatory": true
+        },
+        {
+            "src": "http://localhost:5555/template-project-planner.xltm.zip",
+            "alias": "project-planner",
+            "target": "template-project-planner.xltm",
+            "version": "0.1.0",
+            "mandatory": true
+        }
+    ],
+    "shortcut": {}
+}
